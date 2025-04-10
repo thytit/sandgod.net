@@ -9,3 +9,7 @@ http {
         }
     }
 }
+
+=======Generate SSL
+sudo apt install certbot python3-certbot-nginx
+sudo certbot --nginx -d sandgod.net -d www.sandgod.net
