@@ -1,0 +1,16 @@
+Update file permision
+
+# Replace /your/target/directory with your actual directory
+cd /your/target/directory
+
+# Set folders (directories) to 755
+find . -type d -exec chmod 755 {} \;
+
+# Set files to 644
+find . -type f -exec chmod 644 {} \;
+
+
+find . -type d: finds all directories from the current directory (.) downward.
+find . -type f: finds all files.
+chmod 755 {}: sets directory permissions to 755 (rwxr-xr-x).
+chmod 644 {}: sets file permissions to 644 (rw-r--r--).
